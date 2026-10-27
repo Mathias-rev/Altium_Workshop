@@ -1,0 +1,60 @@
+# =====================================================
+# Enforce LF endings for all text files (cross-platform)
+# =====================================================
+* text=auto eol=lf
+
+# --- Altium text-based project/config files ---
+*.PrjPcb    text eol=lf
+*.OutJob    text eol=lf
+*.BomDoc    text eol=lf
+*.SchDot    text eol=lf
+*.PcbDot    text eol=lf
+*.DbLib     text eol=lf
+*.SVNDbLib  text eol=lf
+*.ini       text eol=lf
+*.csv       text eol=lf
+*.md        text eol=lf
+*.txt       text eol=lf
+*.json      text eol=lf
+*.xml       text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+*.vbs       text eol=lf
+*.pas       text eol=lf
+
+# --- Source code ---
+*.c     text eol=lf
+*.cpp   text eol=lf
+*.h     text eol=lf
+*.hpp   text eol=lf
+*.py    text eol=lf
+*.sh    text eol=lf
+*.ps1   text eol=lf
+Makefile text eol=lf
+
+# =====================================================
+# Binary design files — lockable via Git LFS
+# =====================================================
+*.SchDoc  filter=lfs diff=lfs merge=lfs -text lockable
+*.PcbDoc  filter=lfs diff=lfs merge=lfs -text lockable
+*.SchLib  filter=lfs diff=lfs merge=lfs -text lockable
+*.PcbLib  filter=lfs diff=lfs merge=lfs -text lockable
+*.IntLib  filter=lfs diff=lfs merge=lfs -text lockable
+*.PCBDwf  filter=lfs diff=lfs merge=lfs -text lockable
+*.PcbDocPreview filter=lfs diff=lfs merge=lfs -text
+*.SchDocPreview filter=lfs diff=lfs merge=lfs -text
+
+# --- 3D models / MCAD ---
+*.STEP   filter=lfs diff=lfs merge=lfs -text lockable
+*.STP    filter=lfs diff=lfs merge=lfs -text lockable
+*.x_t    filter=lfs diff=lfs merge=lfs -text lockable
+*.x_b    filter=lfs diff=lfs merge=lfs -text lockable
+*.igs    filter=lfs diff=lfs merge=lfs -text lockable
+*.iges   filter=lfs diff=lfs merge=lfs -text lockable
+
+# --- Documents / images ---
+*.pdf    filter=lfs diff=lfs merge=lfs -text
+*.png    filter=lfs diff=lfs merge=lfs -text
+*.jpg    filter=lfs diff=lfs merge=lfs -text
+*.jpeg   filter=lfs diff=lfs merge=lfs -text
+
